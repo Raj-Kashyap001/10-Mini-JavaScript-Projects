@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.image-container {
+  display: flex;
+}
+
+img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  transform: translateX(0);
+  transition: transform 0.5s linear;
+}

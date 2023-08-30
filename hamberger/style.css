@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  color: rebeccapurple;
+  border: none;
+  padding: 0.5rem;
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  transition: transform 0.2s linear;
+}
+
+.hamburger.active {
+  transform: translateX(-4em);
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background: rebeccapurple;
+  height: 100vh;
+  transition: transform 0.2s linear;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+.nav-list ul {
+  list-style: none;
+}
+
+.nav-list ul li {
+  padding: 1rem 0;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}

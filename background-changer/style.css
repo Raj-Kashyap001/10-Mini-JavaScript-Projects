@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: hsl(0, 0%, 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn {
+  background-color: rebeccapurple;
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.829);
+  transition: all 0.2s linear;
+}
+
+#btn:focus {
+  outline: none;
+}
+
+#btn:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}

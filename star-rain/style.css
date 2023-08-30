@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #081331;
+  justify-content: center;
+}
+
+.star {
+  position: fixed;
+  top: 0;
+  transform: rotate(0deg);
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    top: 100%;
+    transform: rotate(360deg) scale(0.4);
+  }
+}
